@@ -12,6 +12,11 @@
 <body>
     <header>
     <nav>
+            <div id="hamburger-menu" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">Über mich</a></li>
@@ -95,5 +100,11 @@
         <footer>
             <p>&copy; 2025 Peter Campa, Alle Rechte vorbehalten. | <a href="impressum.html">Impressum | <a href="Datenschutzerklärung.html">Datenschutzerklärung</a></a></p>
         </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
