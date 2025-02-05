@@ -433,7 +433,7 @@ footer a:hover {
     }
 
     .about-image {
-        width: 80%;
+        width: 40%;
         max-width: 400px;
         height: auto;
         margin: 0 auto;
@@ -484,18 +484,7 @@ footer a:hover {
         display: block;
     }
 
-    /* Social Links untereinander auf kleinen Geräten */
-    #social-links,
-    .social-links2 {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 20px;
-    }
-
-    #social-links a,
-    .social-links2 a {
-        font-size: 1.3rem;
-    }
+    
 }
 
 @media (max-width: 480px) {
