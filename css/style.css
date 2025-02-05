@@ -76,7 +76,6 @@ nav ul li a:hover {
 
 nav.active ul {
     display: flex;
-    background-color: black;
 }
 
 /*Home*/
@@ -463,6 +462,7 @@ footer a:hover {
     header {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     nav ul {
@@ -486,7 +486,7 @@ footer a:hover {
     .social-links2 {
         flex-direction: column;
         align-items: flex-start;
-        margin: 15px;
+        margin: 40px;
     }
 
     #social-links a,
@@ -500,5 +500,6 @@ footer a:hover {
         background-image: url(../img/calligraphy-7188024_1280.jpg);
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
     }
 }
