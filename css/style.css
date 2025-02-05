@@ -455,7 +455,7 @@ footer a:hover {
 
     @media (max-width: 480px) {
         body {
-            background-image: url('https://example.com/small-mobile-image.jpg'); /* Noch ein anderes Bild für sehr kleine Bildschirme */
+            background-image: url(../img/calligraphy-7188024_1280.jpg); /* Noch ein anderes Bild für sehr kleine Bildschirme */
             background-size: cover;
             background-position: center;
         }
