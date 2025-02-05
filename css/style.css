@@ -61,6 +61,24 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
+/* Hamburger Menü */
+#hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-menu div {
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    background-color: #333;
+}
+
+nav.active ul {
+    display: flex;
+    background-color: black;
+}
+
 /*Home*/
 #Home {
     font-style: italic;
@@ -372,51 +390,76 @@ footer a:hover {
 
 @media (max-width: 768px) {
 
-    body {
-        background-image: url(../img/calligraphy-7188024_1280.jpg); /* Anderes Bild für kleine Bildschirme */
+    body { 
         background-size: cover;  /* Auch hier soll das Bild den gesamten Hintergrund abdecken */
         background-position: center;
         background-attachment: fixed;
     }
 
-    /* für das Hamburger Menü */
-        nav.active ul {
-        display: flex;
-        background-color: black;
-        }
-    
-        .about-content {
-            text-align: center;
-        }
-    
-        .about-image {
-            width: 70%;
-            height: auto;
-            margin: 0 auto;
-            left: 15%;
-        }
-    
-        .about-text {
-            max-width: 90%;
-            margin-left: 0;
-            font-size: 1rem;
-            text-align: center;
-        }
-    
-        .books-container {
-            width: 100%;
-            margin: 10px 0;
-        }
-    
-        .books-container img {
-            width: 100%;
-            height: auto;
-        }
-    
-        form {
-            width: 90%;
-        }
-        
+    /* Hamburger Menü anzeigen */
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    #hamburger-menu {
+        display: block;
+    }
+
+    /* Social Links untereinander */
+    #social-links,
+    .social-links2 {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 15px;
+    }
+
+    #social-links a,
+    .social-links2 a {
+        font-size: 1.3rem;
+    }
+
+    /* Über mich */
+    .about-content {
+        text-align: center;
+    }
+
+    .about-image {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-text {
+        max-width: 90%;
+        margin-left: 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Bücher */
+    .books-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .books-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Formular */
+    form {
+        width: 90%;
+    }
+
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -443,25 +486,19 @@ footer a:hover {
     .social-links2 {
         flex-direction: column;
         align-items: flex-start;
-        padding: 15px;
+        margin: 15px;
     }
 
     #social-links a,
     .social-links2 a {
         font-size: 1.3rem;
-        
     }
 }
-    /* Navigation sichtbar machen, wenn das Hamburger-Menü geklickt wird */
-    nav.active ul {
-        display: flex;
-    }
 
-    @media (max-width: 480px) {
-        body {
-            background-image: url(../img/calligraphy-7188024_1280.jpg); /* Noch ein anderes Bild für sehr kleine Bildschirme */
-            background-size: cover;
-            background-position: center;
-        }
+@media (max-width: 480px) {
+    body {
+        background-image: url(../img/calligraphy-7188024_1280.jpg);
+        background-size: cover;
+        background-position: center;
     }
-
+}
