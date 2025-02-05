@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Campas Profil-Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+    <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#books">Bücher</a></li>
+                <li><a href="pictures.html">Fotos</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+    </nav>
+
+    <div id="social-links">
+        <a href="https://www.facebook.com/peter.campa.169" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="social-links2">
+        <a href="https://www.youtube.com/watch?v=RNzV1w_cdXE" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    </header>
+
+        <section id="Home">
+            <div class="hero-content">
+                <h1>Leben & Werke</h1>
+                <p></p>
+                <button><a href="#books">Mehr erfahren</a></button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Zum Autor</h2>
+            <div class="about-content">
+                <div class="about-text">
+                <p>Peter Campa, geboren 1954 in Wien, ist ein österreichischer Schriftsteller, der sich seit seiner Jugend der Literatur widmet. Nach seiner Matura studierte er zunächst Pharmazie, doch seine wahre Berufung fand er in der Lyrik, wandte sich der Erzählkunst zu und prägt die moderne Genreliteratur. Campa schafft es, Wien in seinen Werken lebendig werden zu lassen, wobei er klassische Erzähltechniken mit innovativen Elementen kombiniert.  </p>
+                
+            </div>
+            <img src="img/PeterCampa.jpg" alt="Profil Bild" class="about-image">
+        </section>
+
+        <section id="books">
+            <h2>Meine Werke</h2>
+            <div class="books-container">
+                <div class="books-list">
+                    <img src="img/DieFettenJahre.jpg" alt="Buch1">
+                    <p>Die Fetten Jahre Sind Vorbei <br>2020</p>
+                </div>
+            </div>
+            <div class="books-container">
+                <img src="img/DerAlteHund.jpg" alt="Buch 2">
+                <p>Der Alte Hund Wiener Geschichten<br>2017</p>
+            </div>
+            <div class="books-container">
+                <img src="img/DerFranz.jpg" alt="Buch 3">
+                <p>Der Ganz Normale Franz <br>2003</p>
+            </div>
+            <div class="books-container">
+                <img src="img/Paul Wolf Bild (1).jpg" alt="Buch 4">
+                <p>Paul Wolf Und Die Katze Ursula <br>2000</p>
+            </div>
+            <div class="books-container">
+                <img src="img/DiezweiteReise.jpg" alt="Buch 5">
+                <p>Die Zweite Reise <br>1997</p>
+            </div>
+            <div class="books-container">
+                <img src="img/AUf der Reise Bild (1).jpg" alt="Buch 6">
+                <p>Auf Der Reise <br>1995</p>
+            </div>
+        </section> 
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Hast du Fragen? Melde dich bei mir!</p>
+            <form action="https://formspree.io/f/mqaebrbn" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Nachricht:</label>
+                <textarea name="message" id="message" required></textarea>
+                <button type="submit">Senden</button>
+            </form>
+
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Peter Campa, Alle Rechte vorbehalten. | <a href="impressum.html">Impressum | <a href="Datenschutzerklärung.html">Datenschutzerklärung</a></a></p>
+        </footer>
+</body>
+</html>

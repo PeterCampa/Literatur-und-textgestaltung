@@ -1,0 +1,105 @@
+
+
+body {
+    line-height: 1.6rem;
+    margin: 0;
+
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    background-image: url(../img/Peter.Campa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(247, 245, 245);
+    transition: background-color 0.3s ease;
+    padding-left: 23%;
+    
+
+}
+
+h1 {
+    font-style: italic;
+    font-size: 4em;
+    margin:  0 0 20px 0;
+    padding: 0 0 20px;
+    margin-left: 30px;
+    
+}
+
+p {
+    font-style: italic;
+    font-size: 1.4rem;
+    padding: 0 0 10px;
+    margin-left: 90px;
+    
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgba(223, 37, 37, 0.459);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 200px;
+    margin-left: 105px;
+    
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color:rgb(233, 58, 58);
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center; /* Zentriert Text und Button auf kleinen Bildschirmen */
+    }
+
+    h1 {
+        font-size: 2.5em; /* Verkleinerung der Schriftgröße für mobile Ansicht */
+        margin-left: 0;
+    }
+
+    p {
+        font-size: 1.2rem; /* Anpassung der Schriftgröße für mobile Ansicht */
+        margin-left: 0;
+    }
+
+    button {
+        margin-left: 0;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+    }
+}
+
+/* Media Query für sehr kleine Geräte (z.B. Handys im Hochformat) */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Weitere Reduzierung der Schriftgröße */
+    }
+
+    p {
+        font-size: 1rem; /* Weitere Reduzierung der Schriftgröße */
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+}
