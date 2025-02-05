@@ -431,7 +431,7 @@ footer a:hover {
     }
 
     .about-image {
-        width: 70%;
+        width: 50%;
         height: auto;
         margin: 0 auto;
     }
@@ -456,7 +456,7 @@ footer a:hover {
 
     /* Formular */
     form {
-        width: 90%;
+        width: 100%;
     }
 
     header {
@@ -486,7 +486,7 @@ footer a:hover {
     .social-links2 {
         flex-direction: column;
         align-items: flex-start;
-        margin: 40px;
+        margin-left: 20px;
     }
 
     #social-links a,
