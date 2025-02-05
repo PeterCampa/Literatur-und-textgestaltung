@@ -376,15 +376,16 @@ footer a:hover {
         background-image: url(../img/calligraphy-7188024_1280.jpg); /* Anderes Bild für kleine Bildschirme */
         background-size: cover;  /* Auch hier soll das Bild den gesamten Hintergrund abdecken */
         background-position: center;
+        background-attachment: fixed;
     }
 
     /* für das Hamburger Menü */
         nav.active ul {
         display: flex;
+        background-color: black;
         }
     
         .about-content {
-            flex-direction: column;
             text-align: center;
         }
     
@@ -392,6 +393,7 @@ footer a:hover {
             width: 70%;
             height: auto;
             margin: 0 auto;
+            left: 15%;
         }
     
         .about-text {
@@ -407,7 +409,7 @@ footer a:hover {
         }
     
         .books-container img {
-            width: 80%;
+            width: 100%;
             height: auto;
         }
     
@@ -441,11 +443,13 @@ footer a:hover {
     .social-links2 {
         flex-direction: column;
         align-items: flex-start;
+        padding: 15px;
     }
 
     #social-links a,
     .social-links2 a {
         font-size: 1.3rem;
+        
     }
 }
     /* Navigation sichtbar machen, wenn das Hamburger-Menü geklickt wird */
