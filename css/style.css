@@ -5,6 +5,7 @@
 }
 
 body {
+    
     background-image: url(../img/calligraphy-7188024_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,26 +176,70 @@ nav.active ul {
 }
 
 /*Über Mich*/
+.table-event table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-event td {
+    background-color: #ffeed5c5;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table-event tr {
+    background-color: #ffeed5c5;
+}
+
+.table-event table,th,td {
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    width: 16vh;
+}
+
+.table-div {
+    background-color: #ffeed500;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 615px;
+    text-align: left;
+}
+
+.table-div h4{
+    font-style: italic;
+    font-size: 1.8rem;
+    color: #000000;
+    margin-bottom: 0px;
+    
+   
+}
+.table-div p {
+    font-size: 1.3rem;
+    color: #000000;
+    
+    margin-bottom: 0px;
+
+}
+
 #about {
     font-style: italic;
     background-color: #ffeed5c5;
     color: #0f0f0f;
-    padding: 50px 20px;
     text-align: center;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
+    
 }
+
+
 
 .about-content {
     display: flex;                
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 120vh;
     margin: 0 auto;
     
 }
@@ -387,11 +432,11 @@ footer a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     body { 
-        max-width: 100%;
-        background-size: cover;  /* Auch hier soll das Bild den gesamten Hintergrund abdecken */
+        width:auto;
+        background-size: contain;  /* Auch hier soll das Bild den gesamten Hintergrund abdecken */
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -432,22 +477,27 @@ footer a:hover {
     }
 
     /* Über mich */
+
+    .table-event table,th,td {
+        font-size: 17px;
+    }
+
     .about-content {
         text-align: center;
-        margin: 0 auto;
+        
+        max-width: 120vh;
     }
 
     .about-image {
         width: 40%;
-        max-width: 100%;
         height: auto;
-        margin-right: 40px;
-        margin-bottom: 60vh;
+        margin-right: 50%;
+        margin-bottom: 80vh;
     }
 
     .about-text {
-        max-width: 100%;
-        margin-left: 0;
+       
+        margin-left: 0px;
         font-size: 1rem;
         
         
@@ -496,6 +546,8 @@ footer a:hover {
     
 }
 
+
+
 @media (max-width: 480px) {
     body {
         background-image: url(../img/calligraphy-7188024_1280.jpg);
@@ -503,4 +555,6 @@ footer a:hover {
         background-position: center;
         background-attachment: fixed;
     }
+
+    
 }
