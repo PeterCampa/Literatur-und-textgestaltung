@@ -1,5 +1,5 @@
 * {
-    background-color: #ffeed5c5;
+    background-color: ghostwhite;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,7 +45,6 @@ nav ul li a:hover {
     height: 50vh;
     width: auto;
     align-items: center;
-    overflow: scroll;
     margin-left: 50px;
     margin-top: 50px;
     margin-right: 0;
